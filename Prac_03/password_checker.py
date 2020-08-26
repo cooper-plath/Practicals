@@ -3,24 +3,22 @@
 NAME_LENGTH = 4
 
 
+def main():
+    password = get_password()
+    asterik_count(password)
+
 def get_password():
     Name_Input = str(input("Word?:"))
-    Word_Count = len(Name_Input)
     while len(Name_Input) < NAME_LENGTH:
         print("Invalid")
         Name_Input = str(input("Word?:"))
-        Word_Count = len(Name_Input)
-    return Word_Count
+    return Name_Input
 
-
-
-
-
-
-def main(NAME_LENGTH):
-    get_password()
+def asterik_count(password):
+    Word_Count = len(password)
     for i in range(Word_Count):
         print("*", end="")
+
 
 main()
 
