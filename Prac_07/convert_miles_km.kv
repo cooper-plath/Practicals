@@ -1,0 +1,26 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: get_input
+            text: ''
+            font_size: 40
+            on_text: app.calculate_input()
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                id: increase_value
+                on_press: app.change_value(1)
+                text: 'Up'
+            Button:
+                id: decrease_value
+                on_press: app.change_value(-1)
+                text: 'Down'
+#    Button:
+#        text: 'Convert miles to kilometres'
+#        on_press: app.calculate_input()
+    Label:
+        id: output_label
+        font_size: 40
+        text: 'test'
