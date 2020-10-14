@@ -9,3 +9,5 @@ language_list = [ruby, python, visual_basic]
 for language in language_list:
     if language.is_dynamic():
         print(language.name)
+
+print(ruby)
